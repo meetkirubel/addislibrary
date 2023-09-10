@@ -1,0 +1,88 @@
+.login-icon {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.login-text1,.login-text {
+    margin-block: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--black-light);
+}
+.login-text:hover {
+    color: var(--yellow);
+}
+
+.login-text1::before {
+    content: "";
+    border: 1px solid var(--black-light);
+    padding: 0px 5rem;
+    display: inline-block;
+    height: 0px;
+    margin-right: 1rem;
+    
+
+}
+.login-text1::after {
+    content: "";
+    border: 1px solid var(--black-light);
+    padding: 0px 5rem;
+    display: inline-block;
+    height: 0px;
+    margin-left: 1rem;
+}
+
+
+.login-form {
+    margin-block: 4rem;
+    
+}
+
+.login-form .input-block{
+    border: 1px solid var(--yellow-light);
+    position: relative;
+    padding: 1rem;
+    margin-block: 2rem;
+    background-color: var(--yellow-light);
+    width: 50%;
+    margin-inline: auto;
+}
+.login-form .input-block .icon {
+    font-size: 1rem;
+    color: var(--black-light);
+}
+input {
+    border: none;
+    outline: none;
+    background-color: var(--yellow-light);
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.login-texts{
+    margin-inline: auto;
+    text-align: center;
+}
+.login-texts .login-link a span {
+    color: var(--yellow);
+}
+
+@media screen and (max-width: 800px){
+    .login-form .input-block{
+        width: 100%;
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .login-text1::before {
+        padding: 0px 2rem;
+    }
+    .login-text1::after {
+        padding: 0px 2rem;
+    }
+    input {
+        margin-left: 0rem;
+    }
+
+}

@@ -1,0 +1,157 @@
+
+
+/*   Nav  */
+nav {
+    padding-block: .5rem;
+    background-color: transparent;
+    width: 100%;
+    margin-inline: auto;
+    z-index: 1000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+nav.active {
+    background-color: var(--black);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;  
+}
+.nav-container .desktop {
+    display: flex;
+    gap:4rem;
+}
+.mobile{
+    display: none;
+}
+
+.nav-container .desktop li {
+    margin-block: auto;
+}
+.nav-container .desktop li a{
+    color:  var(--white);
+    transition: var( --transition);
+    font-size: .9rem;
+}
+.nav-container .desktop li .nav-link:hover {
+    color:  var(--yellow);
+}
+/*   Nav Tablet  */
+@media screen and (max-width: 880px) {
+    .desktop-contact{
+        opacity: 0;
+    }
+    .nav-container .desktop {
+        display: block;
+        gap:4rem;
+        position: absolute;
+        top: 0%;
+        right: -70%;
+        background-color: var(--black);
+        height: 100vh;
+        width: 60%;
+        transition: var(--transition);
+    }
+    .nav-container .mobile-active{
+        right: 5%;
+    }
+    .nav-container .desktop li {
+        padding: 1rem 3rem;
+    }
+    .nav-container .desktop .nav-link-top {
+        padding-top: 3rem;
+    }
+
+    .mobile {
+        display: flex;
+        color: var(--white);
+        position: relative;
+        padding-right: 3rem;
+    }
+    .mobile .nav-btn {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        font-size: 1.5rem;
+        opacity: 0;
+        transition: var(--transition);
+    }
+    .mobile .show{
+        opacity: 1;
+        z-index: 10001;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+/*   Foooter  */
+
+footer {
+    background-color:var(--black);
+    text-align: center;
+}
+.footer-container{
+    padding-block: 3rem;
+}
+.footer-container ul {
+    display: flex;
+    gap:4rem;
+    justify-content: center;
+}
+.footer-container ul li {
+    margin-block: 2rem;
+}
+.footer-container ul li .footer-link{
+    color:  var(--white);
+    transition: var( --transition);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-container ul li .footer-link:hover {
+    color:  var(--yellow);
+}
+.footer-container .button-container{
+    margin-block: 3rem;
+}
+.social-link{
+    margin-inline: 2rem;
+}
+.copyright {
+    color: var(--white);
+    font-weight: 300;
+    margin-block: 3rem 2rem;
+    font-size: .9rem;
+}
+
+/*   Nav Tablet  */
+@media screen and (max-width: 880px) {
+
+    .footer-container ul {
+        gap:1.5rem;
+    }
+    .footer-container ul li .footer-link{
+        font-size: .8rem;
+    }
+    .copyright {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container ul {
+        display: block;
+    }
+    .social-link{
+        margin-inline: .5rem;
+    }
+}

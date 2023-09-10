@@ -1,0 +1,63 @@
+.howtouse-container{
+    text-align: center;
+}
+.cards {
+    width: 95%;
+    padding: 2rem 2rem;
+    gap: 3rem;
+    margin-top: -2rem;
+}
+.carder {
+    width: 26%;
+    text-align: center;
+    padding-block: 1.5rem;
+    margin-bottom: 3rem;
+    border: 5px solid var(--white);
+    border-radius: 1rem;
+    height: auto;
+    transition: var(--transition);
+    box-shadow: 0 0px 20px var(--shadow);
+}
+.carder:hover {
+    border-color: var(--white);
+    background-color: var(--yellow);
+    border-radius: 3rem;
+}
+.carder .card-img {
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    margin-inline: auto;
+    margin-bottom: .5rem;
+    text-align: center;
+    background-position: center center;
+}
+.carder .card-img1 {
+    background-image: url(../../Asset/Cards/card-1.svg);
+}
+.carder .card-img2 {
+    background-image: url(../../Asset/Cards/card-2.svg);
+}
+.carder .card-img3 {
+    background-image: url(../../Asset/Cards/card-3.svg);
+}
+.carder .card-img4 {
+    background-image: url(../../Asset/Cards/card-4.svg);
+}
+
+
+@media screen and (max-width: 880px){
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 3rem;
+        margin-inline: auto;
+
+    }
+
+
+}
+@media screen and (max-width: 480px){
+
+}

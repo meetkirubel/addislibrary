@@ -1,0 +1,49 @@
+.title {
+    padding-bottom: 5rem;
+}
+.team-container {
+    padding: 1rem 4rem;
+    margin-top: -1rem;
+}
+
+.team {
+    text-align: center;
+    padding-block: 1.5rem;
+    box-shadow: 0 0 20px var(--shadow);
+}
+.team .team-img img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team .team-img img:hover {
+    background-color: var(--yellow);
+    mix-blend-mode: multiply;
+}
+
+.team .links {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.team .links a{
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--black);
+    transition: var(--transition);
+}
+.team .links a:hover {
+    color: var(--yellow);
+}
+
+@media screen and (max-width: 480px){
+    .team-container {
+        padding: 1rem 2rem;
+    }
+    .team {
+        margin-inline: 0rem;
+    } 
+}
+

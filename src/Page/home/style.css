@@ -1,0 +1,110 @@
+header {
+    background-color: var(--black);
+    position: relative;
+}
+.hero-img {
+    height: 110vh;
+    height:110svh;
+    position: relative;
+    overflow: hidden;
+}
+.hero-img::before {
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    height: 110vh;
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+.hero-img::after {
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 100%;
+    /* background-image: url(../../Asset/Desktop.svg); */
+    bottom: -100%; 
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    background-repeat: no-repeat;
+    height: 80%;
+    z-index: 1;
+    width: 150vw;
+}
+.hero-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    text-align: center;
+    z-index: 100;
+    width: 88%;
+}
+.icon-container {
+    font-family: Nokia;
+    color: var(--yellow);
+    font-size: 7.5rem;
+    text-align: center;
+    margin-inline: auto;
+    
+}
+.hero-container .hero-title {
+    font-family: Nokia;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.hero-container .hero-text {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    width: 90%;
+    margin-inline: auto;
+}
+.hero-container .hero-text span {
+    color: var(--yellow);
+}
+.hero-container a .hero-button{
+    width: 3rem;
+    transform: rotate(90deg);
+    margin: 2rem auto;
+   
+}
+@media screen and (max-width: 880px) {
+    .icon-container {
+    font-size: 6rem; 
+    }
+    .hero-container .hero-title {
+        font-size: 2rem;
+    }
+    .hero-container .hero-text {
+        font-size: 1rem;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .icon-container {
+        font-size: 6rem; 
+        }
+        .hero-container .hero-title {
+            font-size: 1.5rem;
+        }
+        .hero-container .hero-text {
+            font-size: .9rem;
+            width: 100%;
+           
+    
+        }
+        .hero-container a .hero-button{
+            margin-block: 3rem;
+            
+        }
+
+}
